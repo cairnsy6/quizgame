@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
+import './index.css'
 
 const steps = [
   'Welcome',
@@ -17,9 +18,11 @@ const Footer =()=> {
 
   useEffect(() => {
     switch(window.location.pathname){
-   
       case '/':
         setPageNumber(1);
+      break;
+      case '/game-settings':
+        setPageNumber(2);
       break;
       case '/lobby':
         setPageNumber(2);
@@ -27,7 +30,7 @@ const Footer =()=> {
       case '/game':
         setPageNumber(3);
       break;
-      case '/results':
+      case '/result':
         setPageNumber(4);
       break;
       default:
@@ -41,7 +44,7 @@ const Footer =()=> {
       <Stepper activeStep={pageNumber} alternativeLabel>
         {steps.map((label) => (
           <Step key={label}>
-            <StepLabel>{label}</StepLabel>
+            <StepLabel >{label}</StepLabel>
           </Step>
         ))}
       </Stepper>

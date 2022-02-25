@@ -4,6 +4,7 @@ import './index.css'
 
 const Home = () => {
 
+    window.localStorage.clear()
     return (
         <>
         <h1>Trivia Challenge</h1>
@@ -12,6 +13,7 @@ const Home = () => {
         </>
     )
 }
+
 
 export default Home;
 

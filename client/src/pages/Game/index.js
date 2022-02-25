@@ -1,20 +1,19 @@
-import React,{useState, useEffect} from 'react';
-import axios from 'axios';
+import React,{useState, useEffect, Suspense} from 'react';
+import GameInfo  from './../../components/GameInfo';
+import './index.css'
+
 
 const Game = () => {
-    const [information, setInformation] = useState([])
-
-    useEffect(async () => {
-        const result = await axios(
-          'https://opentdb.com/api.php?amount=10&type=multiple',
-        );
-        const results = result.data.results;
-        console.log(results);
-        
-      }, []);
-
+  
     return (
+      <>
         <h1>Game</h1>
+        <Suspense fallback={<h1>Loading...</h1>}>
+        <GameInfo />
+        </Suspense>
+
+         
+       </>
     )
 }
 

@@ -1,5 +1,27 @@
+@media screen and (min-width: 400px) and (max-width: 600px) {
 .header{
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
+    color: white;
 }
+}
+
+@media screen and (min-width: 601px) {
+    .header{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 27rem;
+        color: white;
+    }
+    }
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    .header{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: white;
+        margin-left:-1rem;
+    }
+    }
+

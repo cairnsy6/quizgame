@@ -25,9 +25,9 @@ export default function Header() {
     <div className="header">
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-        <Button href='/' sx={{ minWidth: 100 }}>Home</Button>
-        <Button href='/about' sx={{ minWidth: 100 }}>About</Button>
-        <Button href='/leaderboard' sx={{ minWidth: 100 }}>Leaderboard</Button>
+        <Button className="link-buttons" href='/' onClick={() =>window.localStorage.clear} sx={{ color:"white", minWidth: 100 }}>Home</Button>
+        <Button href='/about' sx={{color:"white", minWidth: 100 }}>About</Button>
+        <Button href='/leaderboard' sx={{color:"white", minWidth: 100 }}>Leaderboard</Button>
       </Box>
     </React.Fragment>
     </div>

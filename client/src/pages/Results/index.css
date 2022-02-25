@@ -1,0 +1,68 @@
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .chart-header{
+        display:inline-block;
+        font-size:3rem;
+        margin-left: 3.5rem;
+    }
+    
+    .playerInfo{
+        font-size:3rem;
+        margin-left:1rem;
+        width:60%;
+        display: inline-block;
+        
+    }
+    #score{
+        width: 10%;
+        display: inline-block;
+        font-size:3rem;
+        margin-left:0rem;
+    }
+    
+}
+    @media screen and (min-width: 601px) {
+        .chart-header{
+            display:inline-block;
+            font-size:3rem;
+            margin-left: 20rem;
+        }
+        
+        .playerInfo{
+            font-size:3rem;
+            margin-left:18rem;
+            width:60%;
+            display: inline-block;
+            
+        }
+        #score{
+            width: 10%;
+            display: inline-block;
+            font-size:3rem;
+            margin-left:-17rem;
+        }
+        
+        
+        }
+    
+    @media screen and (min-width: 0px) and (max-width: 400px) {
+        .chart-header{
+            display:inline-block;
+            font-size:3rem;
+            margin-left: 3.5rem;
+        }
+        
+        .playerInfo{
+            font-size:3rem;
+            margin-left:1rem;
+            width:60%;
+            display: inline-block;
+            
+        }
+        #score{
+            width: 10%;
+            display: inline-block;
+            font-size:3rem;
+            margin-left:0rem;
+        }
+        
+    } 

@@ -2,7 +2,6 @@
 
 body{
     font-family: 'Dongle', sans-serif;
-    background-color: rgb(149, 219, 117);
-    color:white;
-    border-radius:2rem;
+    width: 90%;
+    margin-left:15px;
 }
