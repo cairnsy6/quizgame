@@ -2,7 +2,7 @@ import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
-import * as Pages from './pages'
+import {Home, About, Lobby, GameSettings, Game, Leaderboard, Result} from './pages'
 import './App.css'
 
 export default function App () {
@@ -13,13 +13,13 @@ export default function App () {
     <div className="background-wrapper">
     <Header />
     <Routes>
-    <Route path="/" element={<Pages.Home />} />
-    <Route path="/about" element={<Pages.About />} />
-    <Route path="/lobby" element={<Pages.Lobby />} />
-    <Route path="/game-settings" element={<Pages.GameSettings />} />
-    <Route path="/game" element={<Pages.Game />} />
-    <Route path="/leaderboard" element={<Pages.Leaderboard />} />
-    <Route path="/result" element={<Pages.Result />} />
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/lobby" element={<Lobby />} />
+    <Route path="/game-settings" element={<GameSettings />} />
+    <Route path="/game" element={<Game />} />
+    <Route path="/leaderboard" element={<Leaderboard />} />
+    <Route path="/result" element={<Result />} />
     </Routes>
     <Footer />
     </div>
